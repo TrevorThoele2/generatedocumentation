@@ -72,13 +72,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\..\freeimage\Source;..\..\function2\include;..\..\inscription;..\..\chroma;..\..\arca;..\..\atmos;..\..\angelscript\angelscript\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\angelscript\angelscript\lib;..\..\freeimage\Dist\x32;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\externaldependencies\freeimage\Source;..\..\externaldependencies\function2\include;..\..\externaldependencies\angelscript\angelscript\include;..\..\inscription;..\..\chroma;..\..\arca;..\..\atmos;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\externaldependencies\angelscript\angelscript\lib;..\..\externaldependencies\freeimage\Dist\x32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\;..\..\angelscript\angelscript\include;..\..\chroma;..\..\inscription;..\..\function2\include;..\..\arca;..\..\freeimage\Dist\x32;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\angelscript\angelscript\lib;..\..\freeimage\Dist\x32;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\;..\..\externaldependencies\angelscript\angelscript\include;..\..\externaldependencies\function2\include;..\..\externaldependencies\freeimage\Dist\x32;..\..\chroma;..\..\inscription;..\..\arca;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\externaldependencies\angelscript\angelscript\lib;..\..\externaldependencies\freeimage\Dist\x32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
